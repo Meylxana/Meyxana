@@ -26,3 +26,4 @@ jobs:
         run: python main.py
         env:
           PYTHONUNBUFFERED: "1"
+          CREDENTIALS_JSON: ${{ secrets.CREDENTIALS_JSON }}
