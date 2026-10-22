@@ -37,7 +37,7 @@ def create_and_upload_video():
         }
     }
 
-    media = MediaFileUpload("final_output.mp4", chunksize=-1, resumable=True)
+    media = MediaFileUpload("video.mp4", chunksize=-1, resumable=True)
     request = youtube.videos().insert(
         part="snippet,status",
         body=body,
